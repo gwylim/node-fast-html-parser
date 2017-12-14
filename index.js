@@ -482,7 +482,8 @@ var kElementsClosedByOpening = {
   li: {li: true},
   p: {p: true, div: true},
   td: {td: true, th: true},
-  th: {td: true, th: true}
+  th: {td: true, th: true},
+  option: {option: true}
 };
 var kElementsClosedByClosing = {
   li: {ul: true, ol: true},
@@ -491,7 +492,8 @@ var kElementsClosedByClosing = {
   i: {div: true},
   p: {div: true},
   td: {tr: true, table: true},
-  th: {tr: true, table: true}
+  th: {tr: true, table: true},
+  option: {select: true, datalist: true, optgroup: true}
 };
 var kBlockTextElements = {
   script: true,
